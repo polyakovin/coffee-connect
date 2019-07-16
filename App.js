@@ -32,8 +32,38 @@ export default class App extends Component {
               <Label>Имя</Label>
               <Input />
             </Item>
+            <Item fixedLabel>
+              <Label>Пол</Label>
+              <Input />
+            </Item>
+            <Item fixedLabel>
+              <Label>Возраст</Label>
+              <Input />
+            </Item>
+            <Item fixedLabel>
+              <Label>Образование</Label>
+              <Input />
+            </Item>
+            <Item fixedLabel>
+              <Label>Специальность</Label>
+              <Input />
+            </Item>
+            <Item fixedLabel>
+              <Label>Сфера деятельности</Label>
+              {/* (выбрать: архитектура, бизнес, маркетинг, искусство, образование, финансы, право, дизайн, HR, продажи, наука, IT, медицина, другое)  */}
+              <Input />
+            </Item>
+            <Item fixedLabel>
+              <Label>Coffee-intro</Label>
+              {/* что я люблю, что мне интересно, о чем я хочу поговорить, узнать */}
+              <Input />
+            </Item>
+            <Item fixedLabel>
+              <Label>E-mail</Label>
+              <Input />
+            </Item>
             <Item fixedLabel last>
-              <Label>Password</Label>
+              <Label>Пароль</Label>
               <Input />
             </Item>
             <Button full>
@@ -59,3 +89,22 @@ const styles = StyleSheet.create({
   //   justifyContent: 'flex-start',
   // },
 });
+
+
+
+// Функционал
+// Поиск людей по следующим критериям:
+// 	•	М/Ж
+// 	•	Гео
+// 	•	Сфера деятельности (можно выбрать любая)
+// Две кнопки: COFFEE и CONNECT (по аналогии с лайками в Тиндер)
+// COFFEE - пригласить на кофе
+// CONNECT – принять приглашение
+// Когда произошел Connect, то можно предложить день и время. Другой может принять или предложить другой день/время.
+// Выбор места: выбрать место на карте (гео-метка) или выбрать конкретное кафе из карты/списка.
+// Если встреча назначена, то приложение должно посылать push-уведомления с напоминалкой.
+
+
+// Искать кандидатов на кофе можно в ручную. Отдельно можно сделать раздел Caffeinate me (Кофе сейчас), где будут висеть профили тех, кто хочет пойти на кофе прямо сейчас.
+// Раздел Random connect/Secret connect – случайное совпадение кандидатов.
+
